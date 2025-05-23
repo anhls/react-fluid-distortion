@@ -11,7 +11,10 @@ const Canvas = () => {
                 left: 0,
                 height: '100vh',
                 width: '100vw',
-            }}>
+                background: 'transparent',
+            }}
+            gl={{ alpha: true }}
+            >
             <Suspense fallback={null}>
                 <ThreeTunnel.Out />
             </Suspense>
